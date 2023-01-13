@@ -6,7 +6,7 @@ From the repo root dir:
 
 2. run the server with below command:
 
->> `./bin/nrf --config ../config/nrf.json`
+>> `./bin/nrf --config config/nrf.json`
 
 3. Test sending requests to the server with `curl`:
 
