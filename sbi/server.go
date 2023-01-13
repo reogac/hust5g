@@ -61,6 +61,8 @@ func NewSbiServer(config *ServerConfig, groups []HttpRouteGroup) SbiServer {
 func (s *httpServer) Serve() {
 	log.Infof("Serving http server at %s:%d", s.config.IpAddr, s.config.Port)
 	go func() {
+		s.wg.Add(1)
+		defer s.wg.Done()
 		s.server.ListenAndServe()
 
 		/* NOTE: use below block if considering https
@@ -76,7 +78,6 @@ func (s *httpServer) Serve() {
 		}
 		*/
 
-		s.wg.Add(1)
 	}()
 	//log.Info("http server is running")
 	return
