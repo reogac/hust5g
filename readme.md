@@ -1,17 +1,19 @@
-a simple framework to implement NRF
+A simple framework to implement NRF
 
-type `make` to build
+From the repo root dir: 
 
-run the server as:
+- type `make` to build
 
-./bin/nrf --config ../config/nrf.json
+- run the server as:
 
-then send requests to the server with `curl`:
+`./bin/nrf --config ../config/nrf.json`
+
+- Then send requests to the server with `curl`:
 
 register an NF:
 
 `curl -d '{"Id": "testid100", "NfType": "smf", "Load": 100, "Seen": "xxx", "Info": {"Status": "I am ok"}}' -H "Content-Type: application/json" -X POST http://127.0.0.1:9001/mngr/reg`
 
-ping a heartbeat for a NF
+ping a heartbeat for an NF
 
 `curl -X POST http://127.0.0.1:9001/mngr/beat/testid100`
