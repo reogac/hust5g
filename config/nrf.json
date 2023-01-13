@@ -1,0 +1,7 @@
+{
+  "sbi": {
+    "ipaddr": "0.0.0.0",
+    "port": 9001
+  },
+  "dbname": "some-thing-to-connect-to-db"
+}
