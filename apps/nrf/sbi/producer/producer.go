@@ -28,6 +28,7 @@ func New(backend Backend) *Producer {
 	}
 }
 
+// create groups of service routes to register to http server
 func (p *Producer) Groups() []sbi.HttpRouteGroup {
 	management := sbi.HttpRouteGroup{
 		Path: "mngr",
