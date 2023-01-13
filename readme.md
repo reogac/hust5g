@@ -1,6 +1,6 @@
 A simple framework to implement NRF
 
-From the repo root dir: 
+From root dir: 
 
 1. type `make` to build
 
