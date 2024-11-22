@@ -1,0 +1,39 @@
+{
+	"plmnId": {
+		"mcc": "208",
+		"mnc": "93"
+	},
+	"dnn":"internet",
+	"useUpmf": false,
+	"slice": {
+		"sst" : 1,
+		"sd": "010203"
+	},
+	"mesh": {
+		"sbiPort": 9500,
+		"agentPort":7500,
+		"registrarIp": "127.0.0.1",
+		"registrarPort": 7777,
+		"labels": {
+			"app":"b5gc",
+			"nf": "smf",
+			"slice": "1-010203",
+			"version": "v1",
+			"os": "debian12"
+		},
+		"labels": {
+			"app":"b5gc",
+			"nf": "smf",
+			"slice": "1-010203",
+			"version": "v2",
+			"location": "daejeon"
+		},
+		"labels": {
+			"app":"b5gc",
+			"nf": "smf",
+			"slice": "1-010203",
+			"version": "v2",
+			"location": "seoul"
+		}
+	}
+}
